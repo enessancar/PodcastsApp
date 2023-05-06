@@ -10,9 +10,9 @@
 		EC513B202A066860003AA4DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B1F2A066860003AA4DC /* AppDelegate.swift */; };
 		EC513B222A066860003AA4DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B212A066860003AA4DC /* SceneDelegate.swift */; };
 		EC513B242A066860003AA4DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B232A066860003AA4DC /* ViewController.swift */; };
-		EC513B272A066860003AA4DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC513B252A066860003AA4DC /* Main.storyboard */; };
 		EC513B292A066862003AA4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC513B282A066862003AA4DC /* Assets.xcassets */; };
 		EC513B2C2A066862003AA4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC513B2A2A066862003AA4DC /* LaunchScreen.storyboard */; };
+		EC513B342A0669A4003AA4DC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B332A0669A4003AA4DC /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		EC513B1F2A066860003AA4DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC513B212A066860003AA4DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC513B232A066860003AA4DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC513B262A066860003AA4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC513B282A066862003AA4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC513B2B2A066862003AA4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC513B2D2A066862003AA4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC513B332A0669A4003AA4DC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		EC513B1E2A066860003AA4DC /* Podcasts */ = {
 			isa = PBXGroup;
 			children = (
-				EC513B1F2A066860003AA4DC /* AppDelegate.swift */,
-				EC513B212A066860003AA4DC /* SceneDelegate.swift */,
+				EC513B352A067320003AA4DC /* Support */,
 				EC513B232A066860003AA4DC /* ViewController.swift */,
-				EC513B252A066860003AA4DC /* Main.storyboard */,
 				EC513B282A066862003AA4DC /* Assets.xcassets */,
 				EC513B2A2A066862003AA4DC /* LaunchScreen.storyboard */,
 				EC513B2D2A066862003AA4DC /* Info.plist */,
+				EC513B332A0669A4003AA4DC /* MainTabBarController.swift */,
 			);
 			path = Podcasts;
+			sourceTree = "<group>";
+		};
+		EC513B352A067320003AA4DC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B362A06732B003AA4DC /* Delegate */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EC513B362A06732B003AA4DC /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B212A066860003AA4DC /* SceneDelegate.swift */,
+				EC513B1F2A066860003AA4DC /* AppDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +143,6 @@
 			files = (
 				EC513B2C2A066862003AA4DC /* LaunchScreen.storyboard in Resources */,
 				EC513B292A066862003AA4DC /* Assets.xcassets in Resources */,
-				EC513B272A066860003AA4DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,7 @@
 			files = (
 				EC513B242A066860003AA4DC /* ViewController.swift in Sources */,
 				EC513B202A066860003AA4DC /* AppDelegate.swift in Sources */,
+				EC513B342A0669A4003AA4DC /* MainTabBarController.swift in Sources */,
 				EC513B222A066860003AA4DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC513B252A066860003AA4DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC513B262A066860003AA4DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC513B2A2A066862003AA4DC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +300,6 @@
 				INFOPLIST_FILE = Podcasts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +327,6 @@
 				INFOPLIST_FILE = Podcasts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
