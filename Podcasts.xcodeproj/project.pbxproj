@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		EC513B202A066860003AA4DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B1F2A066860003AA4DC /* AppDelegate.swift */; };
 		EC513B222A066860003AA4DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B212A066860003AA4DC /* SceneDelegate.swift */; };
-		EC513B242A066860003AA4DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B232A066860003AA4DC /* ViewController.swift */; };
+		EC513B242A066860003AA4DC /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B232A066860003AA4DC /* SearchController.swift */; };
 		EC513B292A066862003AA4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC513B282A066862003AA4DC /* Assets.xcassets */; };
 		EC513B2C2A066862003AA4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC513B2A2A066862003AA4DC /* LaunchScreen.storyboard */; };
 		EC513B342A0669A4003AA4DC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B332A0669A4003AA4DC /* MainTabBarController.swift */; };
+		EC513B402A067D79003AA4DC /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B3F2A067D79003AA4DC /* SearchCell.swift */; };
+		EC513B432A067EA0003AA4DC /* IconImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B422A067EA0003AA4DC /* IconImageView.swift */; };
+		EC513B452A067EF1003AA4DC /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B442A067EF1003AA4DC /* UIView+Ext.swift */; };
+		EC513B492A067FA0003AA4DC /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B482A067FA0003AA4DC /* BodyLabel.swift */; };
+		EC513B4C2A06D8C8003AA4DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC513B4B2A06D8C8003AA4DC /* Alamofire */; };
+		EC513B4E2A06DACB003AA4DC /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B4D2A06DACB003AA4DC /* SearchService.swift */; };
+		EC513B502A06DFDD003AA4DC /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B4F2A06DFDD003AA4DC /* SearchResult.swift */; };
+		EC513B522A06EFC3003AA4DC /* SearchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC513B512A06EFC3003AA4DC /* SearchCellViewModel.swift */; };
+		EC513B552A06F73A003AA4DC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EC513B542A06F73A003AA4DC /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC513B1C2A066860003AA4DC /* Podcasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podcasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC513B1F2A066860003AA4DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC513B212A066860003AA4DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC513B232A066860003AA4DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC513B232A066860003AA4DC /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		EC513B282A066862003AA4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC513B2B2A066862003AA4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC513B2D2A066862003AA4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC513B332A0669A4003AA4DC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		EC513B3F2A067D79003AA4DC /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		EC513B422A067EA0003AA4DC /* IconImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImageView.swift; sourceTree = "<group>"; };
+		EC513B442A067EF1003AA4DC /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Ext.swift"; path = "Podcasts/Views/CustomViews/UIView+Ext.swift"; sourceTree = SOURCE_ROOT; };
+		EC513B482A067FA0003AA4DC /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
+		EC513B4D2A06DACB003AA4DC /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		EC513B4F2A06DFDD003AA4DC /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		EC513B512A06EFC3003AA4DC /* SearchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC513B552A06F73A003AA4DC /* Kingfisher in Frameworks */,
+				EC513B4C2A06D8C8003AA4DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,11 +75,13 @@
 			isa = PBXGroup;
 			children = (
 				EC513B352A067320003AA4DC /* Support */,
-				EC513B232A066860003AA4DC /* ViewController.swift */,
-				EC513B282A066862003AA4DC /* Assets.xcassets */,
-				EC513B2A2A066862003AA4DC /* LaunchScreen.storyboard */,
-				EC513B2D2A066862003AA4DC /* Info.plist */,
-				EC513B332A0669A4003AA4DC /* MainTabBarController.swift */,
+				EC513B392A067B48003AA4DC /* Extension */,
+				EC513B3A2A067B51003AA4DC /* Service */,
+				EC513B3B2A067B5C003AA4DC /* Model */,
+				EC513B3C2A067B60003AA4DC /* Views */,
+				EC513B3D2A067B87003AA4DC /* ViewModel */,
+				EC513B372A0673D2003AA4DC /* Controller */,
+				EC513B232A066860003AA4DC /* SearchController.swift */,
 			);
 			path = Podcasts;
 			sourceTree = "<group>";
@@ -69,6 +89,9 @@
 		EC513B352A067320003AA4DC /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				EC513B2D2A066862003AA4DC /* Info.plist */,
+				EC513B2A2A066862003AA4DC /* LaunchScreen.storyboard */,
+				EC513B282A066862003AA4DC /* Assets.xcassets */,
 				EC513B362A06732B003AA4DC /* Delegate */,
 			);
 			path = Support;
@@ -81,6 +104,96 @@
 				EC513B1F2A066860003AA4DC /* AppDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		EC513B372A0673D2003AA4DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B382A0673DD003AA4DC /* TabBar */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC513B382A0673DD003AA4DC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B332A0669A4003AA4DC /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EC513B392A067B48003AA4DC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B442A067EF1003AA4DC /* UIView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EC513B3A2A067B51003AA4DC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B4D2A06DACB003AA4DC /* SearchService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EC513B3B2A067B5C003AA4DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B4F2A06DFDD003AA4DC /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC513B3C2A067B60003AA4DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B412A067E85003AA4DC /* CustomViews */,
+				EC513B3E2A067D5F003AA4DC /* SearchView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC513B3D2A067B87003AA4DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B512A06EFC3003AA4DC /* SearchCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EC513B3E2A067D5F003AA4DC /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B3F2A067D79003AA4DC /* SearchCell.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		EC513B412A067E85003AA4DC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B472A067F8B003AA4DC /* Label */,
+				EC513B462A067F80003AA4DC /* ImageView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		EC513B462A067F80003AA4DC /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B422A067EA0003AA4DC /* IconImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		EC513B472A067F8B003AA4DC /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				EC513B482A067FA0003AA4DC /* BodyLabel.swift */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +212,10 @@
 			dependencies = (
 			);
 			name = Podcasts;
+			packageProductDependencies = (
+				EC513B4B2A06D8C8003AA4DC /* Alamofire */,
+				EC513B542A06F73A003AA4DC /* Kingfisher */,
+			);
 			productName = Podcasts;
 			productReference = EC513B1C2A066860003AA4DC /* Podcasts.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +244,10 @@
 				Base,
 			);
 			mainGroup = EC513B132A066860003AA4DC;
+			packageReferences = (
+				EC513B4A2A06D8C8003AA4DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EC513B532A06F73A003AA4DC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = EC513B1D2A066860003AA4DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,10 +274,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC513B242A066860003AA4DC /* ViewController.swift in Sources */,
+				EC513B4E2A06DACB003AA4DC /* SearchService.swift in Sources */,
+				EC513B492A067FA0003AA4DC /* BodyLabel.swift in Sources */,
+				EC513B502A06DFDD003AA4DC /* SearchResult.swift in Sources */,
+				EC513B242A066860003AA4DC /* SearchController.swift in Sources */,
 				EC513B202A066860003AA4DC /* AppDelegate.swift in Sources */,
 				EC513B342A0669A4003AA4DC /* MainTabBarController.swift in Sources */,
 				EC513B222A066860003AA4DC /* SceneDelegate.swift in Sources */,
+				EC513B452A067EF1003AA4DC /* UIView+Ext.swift in Sources */,
+				EC513B522A06EFC3003AA4DC /* SearchCellViewModel.swift in Sources */,
+				EC513B402A067D79003AA4DC /* SearchCell.swift in Sources */,
+				EC513B432A067EA0003AA4DC /* IconImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +425,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3KRQW7JR73;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Podcasts/Info.plist;
+				INFOPLIST_FILE = Podcasts/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -324,7 +452,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3KRQW7JR73;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Podcasts/Info.plist;
+				INFOPLIST_FILE = Podcasts/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -364,6 +492,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC513B4A2A06D8C8003AA4DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EC513B532A06F73A003AA4DC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC513B4B2A06D8C8003AA4DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC513B4A2A06D8C8003AA4DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EC513B542A06F73A003AA4DC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC513B532A06F73A003AA4DC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC513B142A066860003AA4DC /* Project object */;
 }
